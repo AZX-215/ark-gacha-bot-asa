@@ -1,8 +1,49 @@
 [
     {
         "name": "pego1",
-        "teleporter": "pego1",
+        "teleporter": "PEGO 01",
+        "delay": 3300
+    },
+
+    {
+        "name": "pego2",
+        "teleporter": "PEGO 02",
+        "delay": 3300
+    },
+
+    {
+        "name": "pego3",
+        "teleporter": "PEGO 03",
+        "delay": 3300
+    },
+
+    {
+        "name": "pego4",
+        "teleporter": "PEGO 04",
+        "delay": 3300
+    },
+
+    {
+        "name": "pego5",
+        "teleporter": "PEGO 05",
+        "delay": 3300
+    },
+
+    {
+        "name": "pego6",
+        "teleporter": "PEGO 06",
+        "delay": 3300
+    },
+
+    {
+        "name": "pego7",
+        "teleporter": "PEGO 07",
+        "delay": 3300
+    },
+
+    {
+        "name": "pego8",
+        "teleporter": "PEGO 08",
         "delay": 3300
     }
-
 ]

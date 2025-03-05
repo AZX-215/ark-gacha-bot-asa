@@ -1,52 +1,290 @@
 [
     {
-        "name": "gacha1",
-        "teleporter": "GACHAPAIR1",
+        "name": "gacha01",
+        "teleporter": "Gacha 01",
         "resource_type": "element",
         "side": "left"
     },
     {
-        "name": "gacha2",
-        "teleporter": "GACHAPAIR1",
+        "name": "gacha02",
+        "teleporter": "Gacha 01",
         "resource_type": "element",
         "side": "right"
     },
     {
-        "name": "gacha3",
-        "teleporter": "GACHAPAIR2",
+        "name": "gacha03",
+        "teleporter": "Gacha 02",
         "resource_type": "element",
         "side": "left"
     },
     {
-        "name": "gacha4",
-        "teleporter": "GACHAPAIR2",
+        "name": "gacha04",
+        "teleporter": "Gacha 02",
         "resource_type": "element",
         "side": "right"
     },
     {
-        "name": "gacha5",
-        "teleporter": "GACHAPAIR3",
+        "name": "gacha05",
+        "teleporter": "Gacha 03",
         "resource_type": "element",
         "side": "left"
     },
     {
-        "name": "gacha6",
-        "teleporter": "GACHAPAIR3",
+        "name": "gacha06",
+        "teleporter": "Gacha 03",
         "resource_type": "element",
         "side": "right"
     },
     {
-        "name": "gacha7",
-        "teleporter": "GACHAPAIR4",
+        "name": "gacha07",
+        "teleporter": "Gacha 04",
         "resource_type": "element",
         "side": "left"
     },
     {
-        "name": "gacha8",
-        "teleporter": "GACHAPAIR4",
+        "name": "gacha08",
+        "teleporter": "Gacha 04",
+        "resource_type": "element",
+        "side": "right"
+    },
+    {
+        "name": "gacha09",
+        "teleporter": "Gacha 05",
+        "resource_type": "element",
+        "side": "left"
+    },
+    {
+        "name": "gacha10",
+        "teleporter": "Gacha 05",
+        "resource_type": "element",
+        "side": "right"
+    },
+    {
+        "name": "gacha11",
+        "teleporter": "Gacha 06",
+        "resource_type": "element",
+        "side": "left"
+    },
+    {
+        "name": "gacha12",
+        "teleporter": "Gacha 06",
+        "resource_type": "element",
+        "side": "right"
+    },
+    {
+        "name": "gacha13",
+        "teleporter": "Gacha 07",
+        "resource_type": "element",
+        "side": "left"
+    },
+    {
+        "name": "gacha14",
+        "teleporter": "Gacha 07",
+        "resource_type": "element",
+        "side": "right"
+    },
+    {
+        "name": "gacha15",
+        "teleporter": "Gacha 08",
+        "resource_type": "element",
+        "side": "left"
+    },
+    {
+        "name": "gacha16",
+        "teleporter": "Gacha 08",
+        "resource_type": "element",
+        "side": "right"
+    },
+    {
+        "name": "gacha17",
+        "teleporter": "Gacha 09",
+        "resource_type": "element",
+        "side": "left"
+    },
+    {
+        "name": "gacha18",
+        "teleporter": "Gacha 09",
+        "resource_type": "element",
+        "side": "right"
+    },
+    {
+        "name": "gacha19",
+        "teleporter": "Gacha 10",
+        "resource_type": "element",
+        "side": "left"
+    },
+    {
+        "name": "gacha20",
+        "teleporter": "Gacha 10",
+        "resource_type": "element",
+        "side": "right"
+    },
+    {
+        "name": "gacha21",
+        "teleporter": "Gacha 11",
+        "resource_type": "element",
+        "side": "left"
+    },
+    {
+        "name": "gacha22",
+        "teleporter": "Gacha 11",
+        "resource_type": "element",
+        "side": "right"
+    },
+    {
+        "name": "gacha23",
+        "teleporter": "Gacha 12",
+        "resource_type": "element",
+        "side": "left"
+    },
+    {
+        "name": "gacha24",
+        "teleporter": "Gacha 12",
+        "resource_type": "element",
+        "side": "right"
+    },
+    {
+        "name": "gacha025",
+        "teleporter": "Gacha 13",
+        "resource_type": "element",
+        "side": "left"
+    },
+    {
+        "name": "gacha26",
+        "teleporter": "Gacha 13",
+        "resource_type": "element",
+        "side": "right"
+    },
+    {
+        "name": "gacha27",
+        "teleporter": "Gacha 14",
+        "resource_type": "element",
+        "side": "left"
+    },
+    {
+        "name": "gacha28",
+        "teleporter": "Gacha 14",
+        "resource_type": "element",
+        "side": "right"
+    },
+    {
+        "name": "gacha29",
+        "teleporter": "Gacha 15",
+        "resource_type": "element",
+        "side": "left"
+    },
+    {
+        "name": "gacha30",
+        "teleporter": "Gacha 15",
+        "resource_type": "element",
+        "side": "right"
+    },
+    {
+        "name": "gacha31",
+        "teleporter": "Gacha 16",
+        "resource_type": "element",
+        "side": "left"
+    },
+    {
+        "name": "gacha32",
+        "teleporter": "Gacha 16",
+        "resource_type": "element",
+        "side": "right"
+    },
+    {
+        "name": "gacha33",
+        "teleporter": "Gacha 17",
+        "resource_type": "element",
+        "side": "left"
+    },
+    {
+        "name": "gacha34",
+        "teleporter": "Gacha 17",
+        "resource_type": "element",
+        "side": "right"
+    },
+    {
+        "name": "gacha35",
+        "teleporter": "Gacha 18",
+        "resource_type": "element",
+        "side": "left"
+    },
+    {
+        "name": "gacha36",
+        "teleporter": "Gacha 18",
+        "resource_type": "element",
+        "side": "right"
+    },
+    {
+        "name": "gacha37",
+        "teleporter": "Gacha 19",
+        "resource_type": "element",
+        "side": "left"
+    },
+    {
+        "name": "gacha38",
+        "teleporter": "Gacha 19",
+        "resource_type": "element",
+        "side": "right"
+    },
+    {
+        "name": "gacha39",
+        "teleporter": "Gacha 20",
+        "resource_type": "element",
+        "side": "left"
+    },
+    {
+        "name": "gacha40",
+        "teleporter": "Gacha 20",
+        "resource_type": "element",
+        "side": "right"
+    },
+    {
+        "name": "gacha41",
+        "teleporter": "Gacha 21",
+        "resource_type": "element",
+        "side": "left"
+    },
+    {
+        "name": "gacha42",
+        "teleporter": "Gacha 21",
+        "resource_type": "element",
+        "side": "right"
+    },
+    {
+        "name": "gacha43",
+        "teleporter": "Gacha 22",
+        "resource_type": "element",
+        "side": "left"
+    },
+    {
+        "name": "gacha44",
+        "teleporter": "Gacha 22",
+        "resource_type": "element",
+        "side": "right"
+    },
+    {
+        "name": "gacha45",
+        "teleporter": "Gacha 23",
+        "resource_type": "element",
+        "side": "left"
+    },
+    {
+        "name": "gacha46",
+        "teleporter": "Gacha 23",
+        "resource_type": "element",
+        "side": "right"
+    },
+    {
+        "name": "gacha47",
+        "teleporter": "Gacha 24",
+        "resource_type": "element",
+        "side": "left"
+    },
+    {
+        "name": "gacha48",
+        "teleporter": "Gacha 24",
         "resource_type": "element",
         "side": "right"
     }
-    
-    
 ]

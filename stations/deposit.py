@@ -102,7 +102,7 @@ def depo_grinder(metadata):
     utils.turn_right(180)
     time.sleep(0.5)
     ark.open_structure()
-    time.sleep(0.2)
+    time.sleep(0.3)
     if template.template_sleep("grinder",0.7,1) == False:
         ark.close_inventory()
         utils.zero()
@@ -145,13 +145,13 @@ def collect_grindables(metadata):
         time.sleep(0.4)
     if template.check_template("inventory",0.7):
         ark.transfer_all_from()
-        time.sleep(0.2)
+        time.sleep(0.3)
         ark.close_inventory()
     time.sleep(0.5)
     utils.turn_left(90)
     time.sleep(0.5) # stopping hitting E on the fabricator
     dedi_deposit(settings.height_grind)
-    time.sleep(0.2)
+    time.sleep(0.3)
     drop_useless()
 
 

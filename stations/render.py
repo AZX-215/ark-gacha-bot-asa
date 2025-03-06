@@ -66,7 +66,7 @@ def enter_tekpod():
 
 def leave_tekpod():
     ark.close_tribelog()
-    time.sleep(0.4)
+    time.sleep(0.5)
     pyautogui.press(local_player.get_input_settings("Use"))
     time.sleep(1)
     if ark.buffs() == 2: # long time for big timers 

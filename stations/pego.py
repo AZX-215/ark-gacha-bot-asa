@@ -19,11 +19,11 @@ def pego_pickup(metadata):
         ark.open_structure()
     if template.check_template("inventory",0.7):
         ark.drop_all_inv()
-        time.sleep(0.2)
+        time.sleep(0.5)
         ark.transfer_all_from()
-        time.sleep(0.2)
+        time.sleep(0.5)
         ark.close_inventory() # prevents pego being FLUNG
         
     time.sleep(0.5)
     utils.turn_down(utils.current_pitch)
-    time.sleep(0.2)
+    time.sleep(0.5)

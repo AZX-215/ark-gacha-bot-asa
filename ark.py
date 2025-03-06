@@ -21,7 +21,7 @@ global first_run
 first_run = True
 
 def ini():
-    time.sleep(0.2)
+    time.sleep(0.3)
     if template.check_template_no_bounds("console",0.55) == False:
         utils.press_key("ConsoleKeys")
 
@@ -34,7 +34,7 @@ def ini():
             break
         count += 1
         time.sleep(0.1)
-    time.sleep(0.2)
+    time.sleep(0.3)
     pyautogui.write(ini, interval=0.005) # issues when insta writing 
     utils.press_key("Enter")
     time.sleep(0.3)
@@ -61,18 +61,18 @@ def open_tribelog():
 
 def close_tribelog():
     if template.check_template_no_bounds("tribelog_check",0.8):
-        time.sleep(0.2)
+        time.sleep(0.3)
         windows.click(variables.get_pixel_loc("close_inv_x"),variables.get_pixel_loc("close_inv_y")) # now ready to do whatever we need to 
         
         if template.window_still_open_no_bounds("tribelog_check",0.8,2):
             time.sleep(3) # guessing its timer
             windows.click(variables.get_pixel_loc("close_inv_x"),variables.get_pixel_loc("close_inv_y"))
             time.sleep(2)
-    time.sleep(0.2)
+    time.sleep(0.3)
 
 def close_teleporter():
     if template.check_template_no_bounds("teleporter_title",0.7):
-        time.sleep(0.2)
+        time.sleep(0.3)
         windows.click(variables.get_pixel_loc("back_button_tp_x"),variables.get_pixel_loc("back_button_tp_y")) # now ready to do whatever we need to 
         
         if template.window_still_open_no_bounds("teleporter_title",0.7,2):
@@ -125,53 +125,53 @@ def dedi_withdraw(amount:int):
     
 def search_in_object(item:str): 
     discordbot.logger(f"searching in structure/dino for {item}")
-    time.sleep(0.2)
+    time.sleep(0.3)
     windows.click(variables.get_pixel_loc("search_object_x"),variables.get_pixel_loc("transfer_all_y"))
     utils.ctrl_a() 
-    time.sleep(0.2)
+    time.sleep(0.3)
     utils.write(item)
     time.sleep(0.1)
 
 def search_in_inventory(item:str):
     discordbot.logger(f"searching in inventory for {item}")
-    time.sleep(0.2)
+    time.sleep(0.3)
     windows.click(variables.get_pixel_loc("search_inventory_x"),variables.get_pixel_loc("transfer_all_y")) 
     utils.ctrl_a()  
-    time.sleep(0.2)
+    time.sleep(0.3)
     utils.write(item)
     time.sleep(0.1)
 
 def drop_all_inv():  
     discordbot.logger(f"dropping all items")
-    time.sleep(0.2)
+    time.sleep(0.3)
     windows.click(variables.get_pixel_loc("drop_all_x"),variables.get_pixel_loc("transfer_all_y")) 
     time.sleep(0.1)
 
 def drop_all_obj():
     discordbot.logger(f"dropping all items")
-    time.sleep(0.2)
+    time.sleep(0.3)
     windows.click(variables.get_pixel_loc("drop_all_obj_x"),variables.get_pixel_loc("transfer_all_y")) 
     time.sleep(0.1)
 
 def transfer_all_from(): 
     discordbot.logger(f"transfering all from object")
-    time.sleep(0.2)
+    time.sleep(0.3)
     windows.click(variables.get_pixel_loc("transfer_all_from_x"), variables.get_pixel_loc("transfer_all_y"))
     time.sleep(0.1)
 
 def transfer_all_inventory(): 
     discordbot.logger(f"transfering all in inventory")
-    time.sleep(0.2)
+    time.sleep(0.3)
     windows.click(variables.get_pixel_loc("transfer_all_inventory_x"),variables.get_pixel_loc("transfer_all_y"))
     time.sleep(0.1)
 
 def buffs():
     open_inventory()
     count = 0
-    time.sleep(0.5)
+    time.sleep(0.7)
     while template.check_template("show_buff",0.7) and count < 10:
         windows.click(variables.get_pixel_loc("buff_button_x"),variables.get_pixel_loc("buff_button_y"))
-        time.sleep(0.2)
+        time.sleep(0.3)
         count += 1
     time.sleep(0.4)
     if template.check_buffs("tek_pod_buff",0.7):
@@ -300,7 +300,7 @@ def popcorn_inventory(item):
     while template.inventory_first_slot(item,0.35):
         pyautogui.click(variables.get_pixel_loc("inv_slot_start_x")+30,variables.get_pixel_loc("inv_slot_start_y")+30)
         utils.press_key("DropItem")
-        time.sleep(0.2)
+        time.sleep(0.3)
 
     close_inventory()
 
@@ -325,14 +325,14 @@ def implant_eat():
     pyautogui.keyDown("s")
     time.sleep(1)        # walking back to avoid suiciding on parts needing to be accessed
     pyautogui.keyUp("s")
-    time.sleep(0.2)
+    time.sleep(0.3)
     utils.press_key("ShowMyInventory")
     time.sleep(1.5)
     pyautogui.click(variables.get_pixel_loc("implant_eat_x"),variables.get_pixel_loc("implant_eat_y"))
     time.sleep(10) # acouting for lag on high ping 
     utils.press_key("Use")
     while template.check_template("death_regions",0.7) == False:
-        time.sleep(0.2)
+        time.sleep(0.3)
     time.sleep(1)
 
 
@@ -362,7 +362,7 @@ def console_ccc():
     while template.check_template_no_bounds("console",0.55) == False:
         if count > 31:
             break
-        time.sleep(0.2)
+        time.sleep(0.3)
         if count % 10 == 0 and count != 0:
             utils.press_key("ConsoleKeys")
         count += 1
@@ -385,7 +385,7 @@ def console_write(info:str):
     while template.check_template_no_bounds("console",0.55) == False:
         if count > 21:
             break
-        time.sleep(0.2)
+        time.sleep(0.3)
         if count % 10 == 0 and count != 0:
             utils.press_key("ConsoleKeys")
         count += 1
@@ -393,7 +393,7 @@ def console_write(info:str):
         pyautogui.write(info)
         time.sleep(0.3)
         utils.press_key("Enter")
-        time.sleep(0.2)
+        time.sleep(0.3)
     
 def bed_spawn_in(bed_name:str):
 
@@ -409,7 +409,7 @@ def bed_spawn_in(bed_name:str):
         utils.ctrl_a()
         utils.write(bed_name)
 
-    time.sleep(0.2)
+    time.sleep(0.5)
     windows.click(variables.get_pixel_loc("first_bed_slot_x"),variables.get_pixel_loc("first_bed_slot_y"))
     if template.template_sleep("ready_clicked_bed",0.7,1) == False:
         pass # maybe use ocr to see when bed is ready    
@@ -458,7 +458,7 @@ def teleport_not_default(arg):
         utils.pitch_zero()
         utils.set_yaw(stationdata.yaw)
         utils.turn_down(80)
-        time.sleep(0.2)
+        time.sleep(0.3)
         utils.press_key("Use")
         template.template_sleep("teleporter_title",0.7,2)
 
@@ -470,9 +470,9 @@ def teleport_not_default(arg):
     utils.ctrl_a()
     utils.write(teleporter_name)
 
-    time.sleep(0.2)
+    time.sleep(0.5)
     windows.click(variables.get_pixel_loc("first_bed_slot_x"),variables.get_pixel_loc("first_bed_slot_y"))
-    time.sleep(0.2)
+    time.sleep(0.3)
     windows.click(variables.get_pixel_loc("spawn_button_x"),variables.get_pixel_loc("spawn_button_y"))
     count = 0
     while white_flash() == False and count < 20:
@@ -517,7 +517,7 @@ def teleport_default(teleporter_name): # param teleporter_name incase of unable 
         count += 1
 
     close_tribelog()
-    time.sleep(0.2)
+    time.sleep(0.3)
 
     ccc_data_after = console_ccc()
     result = [a == b for a, b in zip(ccc_data_after[:3], ccc_data_before[:3])]

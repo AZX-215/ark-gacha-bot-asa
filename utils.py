@@ -3,7 +3,7 @@ import time
 import local_player
 import windows
 import ark 
-
+import discordbot
 """
 FUNCTIONS FOR KEYBOARD 
 """
@@ -12,16 +12,16 @@ WM_KEYUP = 0x0101
 WM_CHAR = 0x0102
 
 keymap = {
-    "tab": 0x09,"escape": 0x1B,"return": 0x0D, "enter": 0x0D, "leftcontrol": 0xA2, "zero": 0x30,
-    "one": 0x31, "two": 0x32, "three": 0x33, "four": 0x34, "five": 0x35, "six": 0x36, "seven": 0x37,
-    "eight": 0x38, "nine": 0x39, "thumbmousebutton": 0x05, "thumbmousebutton2": 0x06, "spacebar": 0x20, "hyphen": 0xBD,
-    "leftshift": 0xA0, "tilde": 0xC0, "e": 0x45, "i": 0x49, "f": 0x46, "o": 0x4F, "r": 0x52, "l": 0x4C, "c": 0x43
+    "tab":0x09,"escape" :0x1B,"return":0x0D, "enter":0x0D, "leftcontrol":0xA2, "zero": 0x30,
+    "one":0x31, "two":0x32, "three":0x33 , "four":0x34 , "five":0x35 , "six":0x36 , "seven":0x37,
+    "eight":0x38, "nine":0x39, "thumbmousebutton": 0x05, "thumbmousebutton2": 0x06, "spacebar": 0x20,"hyphen":0xBD,
+    "leftshift":0xA0 , "tilde":0xC0
 }
 
 default_keymap = { 
-    "use": "e", "consolekeys": "tilde", "showtribemanager": "l", "showmyinventory": "i", "accessinventory": "f", "dropitem": "o",
-    "pausemenu": "escape", "reload":"r", "run": "leftshift", "crouch": "c", "useitem1": "one","useitem2": "two", "useitem3": "three", "useitem4": "four",
-    "useitem5": "five", "useitem6": "six", "useitem7": "seven", "useitem8": "eight", "useitem9": "nine", "useitem10": "zero"
+    "use": "e", "consolekeys": "tilde", "showtribemanager": "l", "showmyinventory": "i", "accessinventory": "f", "dropitem":"o",
+    "pausemenu": "escape","reload":"r","run":"leftshift","crouch":"c","useitem1": "one","useitem2": "two","useitem3": "three","useitem4": "four",
+    "useitem5": "five","useitem6": "six","useitem7": "seven","useitem8": "eight","useitem9": "nine","useitem10": "zero"
 }
 
 hwnd = windows.hwnd
@@ -54,12 +54,12 @@ def press_key(input_action):
     time.sleep(0.05)
     ctypes.windll.user32.PostMessageW(hwnd, WM_KEYUP , vk_code, 0)
 
-def post_character(char):
+def post_charecter(char):
     ctypes.windll.user32.PostMessageW(hwnd, WM_CHAR, ord(char), 0)
 
 def write(text):
     for c in text:
-        post_character(c)
+        post_charecter(c)
         
 def ctrl_a(): # hotkey for sending ctrl a 
     ctypes.windll.user32.SendMessageW(windows.hwnd, WM_KEYDOWN, 0x11, 0)
@@ -88,9 +88,10 @@ def normalize_yaw(yaw):
 def set_yaw(yaw):
     global current_yaw
     try:
+        discordbot.gachalogs.debug(f"setting yaw as {float(ark.console_ccc()[3])}")
         current_yaw = float(ark.console_ccc()[3])
     except Exception as e:
-        print(e)
+        discordbot.gachalogs.error(f"error processing ccc_data[3]: {e}")
 
     diff = ((yaw - current_yaw) + 180) % 360 - 180
     if diff < 0:
@@ -120,7 +121,7 @@ def yaw_zero(ccc_data = None):
             turn_right(-float(ccc_data[3]))
         current_yaw = 0
     except Exception as e:
-        print(f"error processing ccc_data[3]: {e}")
+        discordbot.gachalogs.error(f"error processing ccc_data[3]: {e}")
         #ark.check_state()
 
 def pitch_zero(ccc_data = None):
@@ -135,10 +136,11 @@ def pitch_zero(ccc_data = None):
             turn_up(-float(ccc_data[4]))
         current_pitch = 0
     except Exception as e:
-        print(f"error processing ccc_data[4]: {e}")
+        discordbot.gachalogs.error(f"error processing ccc_data[4]: {e}")
         #ark.check_state()
 
 def zero():
+    discordbot.gachalogs.debug("setting view angles back to 0")
     global current_yaw
     global current_pitch
     ccc_data = ark.console_ccc()    

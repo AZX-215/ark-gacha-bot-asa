@@ -1,15 +1,13 @@
 import discord
 import task_manager
+import logging
 
-def logger(message):
-    with open("txt_files/logs.txt", 'a') as file:
-        file.write(f"\n{message}")
-    print(message)
+logging_level = logging.DEBUG
 
-def queue_write(message,queue):
-    with open(f"txt_files/{queue}.txt", "a") as file:
-        file.write(f"\n{message}")
-    
+gachalogs = logging.getLogger("Gacha")
+logging.basicConfig(filename="txt_files/logs.txt",level=logging_level,format="%(asctime)s - %(levelname)s - %(message)s",datefmt="%H:%M:%S")
+gachalogs.setLevel(logging_level)
+
 async def embed_create(queue_type):
     try:
         embed = discord.Embed(title=f"{queue_type}")
@@ -46,7 +44,7 @@ async def embed_create(queue_type):
             count += 1
         return embed
     except Exception as e:
-        print(f"error in embed_create: {e}")
+        gachalogs.error(f"error in embed_create: {e}")
         return discord.Embed(title="error", description=str(e))
 if __name__ =="__main__":
     pass

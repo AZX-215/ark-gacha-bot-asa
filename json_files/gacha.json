@@ -3,289 +3,289 @@
         "name": "Gacha01",
         "teleporter": "Gacha 01",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha02",
         "teleporter": "Gacha 01",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha03",
         "teleporter": "Gacha 02",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha04",
         "teleporter": "Gacha 02",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha05",
         "teleporter": "Gacha 03",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha06",
         "teleporter": "Gacha 03",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha07",
         "teleporter": "Gacha 04",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha08",
         "teleporter": "Gacha 04",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha09",
         "teleporter": "Gacha 05",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha10",
         "teleporter": "Gacha 05",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha11",
         "teleporter": "Gacha 06",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha12",
         "teleporter": "Gacha 06",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha13",
         "teleporter": "Gacha 07",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha14",
         "teleporter": "Gacha 07",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha15",
         "teleporter": "Gacha 08",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha16",
         "teleporter": "Gacha 08",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha17",
         "teleporter": "Gacha 09",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha18",
         "teleporter": "Gacha 09",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha19",
         "teleporter": "Gacha 10",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha20",
         "teleporter": "Gacha 10",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha21",
         "teleporter": "Gacha 11",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha22",
         "teleporter": "Gacha 11",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha23",
         "teleporter": "Gacha 12",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha24",
         "teleporter": "Gacha 12",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha025",
         "teleporter": "Gacha 13",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha26",
         "teleporter": "Gacha 13",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha27",
         "teleporter": "Gacha 14",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha28",
         "teleporter": "Gacha 14",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha29",
         "teleporter": "Gacha 15",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha30",
         "teleporter": "Gacha 15",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha31",
         "teleporter": "Gacha 16",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha32",
         "teleporter": "Gacha 16",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha33",
         "teleporter": "Gacha 17",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha34",
         "teleporter": "Gacha 17",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha35",
         "teleporter": "Gacha 18",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha36",
         "teleporter": "Gacha 18",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha37",
         "teleporter": "Gacha 19",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha38",
         "teleporter": "Gacha 19",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha39",
         "teleporter": "Gacha 20",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha40",
         "teleporter": "Gacha 20",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha41",
         "teleporter": "Gacha 21",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha42",
         "teleporter": "Gacha 21",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha43",
         "teleporter": "Gacha 22",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha44",
         "teleporter": "Gacha 22",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha45",
         "teleporter": "Gacha 23",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha46",
         "teleporter": "Gacha 23",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     },
     {
         "name": "Gacha47",
         "teleporter": "Gacha 24",
         "resource_type": "element",
-        "side": "Left"
+        "side": "left"
     },
     {
         "name": "Gacha48",
         "teleporter": "Gacha 24",
         "resource_type": "element",
-        "side": "Right"
+        "side": "right"
     }
 
 
